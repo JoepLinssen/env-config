@@ -1,0 +1,12 @@
+export VISUAL=nano
+export EDITOR="$VISUAL"
+export LIBGL_ALWAYS_SOFTWARE=1
+
+alias gg='git status'
+alias cb='catkin build'
+alias ws='wstool'
+alias gzu='rosservice call /gazebo/unpause_physics'
+alias gzp='rosservice call /gazebo/pause_physics'
+alias setgoal='rostopic pub -f ~/Documents/goal.txt /move_base_simple/goal --once geometry_msgs/PoseStamped'
+
+alias pypath-append='export PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages'
