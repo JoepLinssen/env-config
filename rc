@@ -4,12 +4,14 @@ export LIBGL_ALWAYS_SOFTWARE=1
 
 alias gg='git status'
 alias cb='catkin build'
+alias cc='catkin clean -y'
 alias ws='wstool'
+
 alias gzu='rosservice call /gazebo/unpause_physics'
 alias gzp='rosservice call /gazebo/pause_physics'
 alias setgoal='rostopic pub -f ~/Documents/goal.txt /move_base_simple/goal --once geometry_msgs/PoseStamped'
-alias rexp='rostopic pub /run_experiment std_msgs/Bool "data: true" --once'
-alias sexp='rostopic pub /run_experiment std_msgs/Bool "data: false" --once'
+alias runexp='rostopic pub /run_experiment std_msgs/Bool "data: true" --once'
+alias stopexp='rostopic pub /run_experiment std_msgs/Bool "data: false" --once'
 
 alias cdt='cd ~/SURFdrive/Graduation/Reports/Overleaf'
 alias pypath-append='export PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages'
