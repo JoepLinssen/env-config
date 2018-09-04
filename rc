@@ -15,3 +15,5 @@ alias stopexp='rostopic pub /run_experiment std_msgs/Bool "data: false" --once'
 
 alias cdt='cd ~/SURFdrive/Graduation/Reports/Overleaf'
 alias pypath-append='export PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages'
+
+alias matlabgl='matlab -softwareopengl'
