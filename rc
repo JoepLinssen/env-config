@@ -12,6 +12,7 @@ alias gzp='rosservice call /gazebo/pause_physics'
 alias setgoal='rostopic pub -f ~/Documents/goal.txt /move_base_simple/goal --once geometry_msgs/PoseStamped'
 alias runexp='rostopic pub /run_experiment std_msgs/Bool "data: true" --once'
 alias stopexp='rostopic pub /run_experiment std_msgs/Bool "data: false" --once'
+alias configedits='gedit ~/FAST/src/sfm_gazebo_plugin/config/plugin_params.yaml & gedit ~/FAST/src/sfm_local_planner/config/planner_params.yaml & gedit ~/Documents/goal.txt &'
 
 alias cdt='cd ~/SURFdrive/Graduation/Reports/Overleaf'
 alias pypath-append='export PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages'
